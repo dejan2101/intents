@@ -2,4 +2,9 @@ language: sl
 intents:
   HassClimateGetTemperature:
     data:
-    - sentences: []
+    - sentences:
+      - "kakšna je [trenutna] <temp> [<area>]"
+      - "kako (visoka|nizka|vroče|toplo|hladno|mrzlo) je [<temp>] [trenutno] [<area>] [trenutno]"
+      - "[ali] je [trenutn(a|o)] [<temp>] [<area>] [trenutno] (visoka|nizka|vroče|toplo|hladno|mrzlo)"
+      - "koliko <temp> je [trenutno] [<area>]"
+      - "(povej|sporoči) [mi] [trenutn(o|e)] <temp> [<area>]" 
