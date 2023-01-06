@@ -3,4 +3,27 @@ intents:
   HassOpenCover:
     data:
     - sentences:
-      - "<open> [<name>] [<area>] [<covers>] [<area>]"
+      - "<open> [<name>] [<area>] [<blinds>] [<area>]"
+      slots:
+        device_class:
+          - "blind"
+          - "curtain"
+          - "shutter"
+    - sentences:
+      - "<open> [<name>] [<area>] [<doors>] [<area>]"
+      slots:
+        device_class:
+          - "door"
+          - "garage"
+          - "gate"
+    - sentences:
+      - "<open> [<name>] [<area>] [<windows>] [<area>]"
+      slots:
+        device_class:
+          - "window"
+    - sentences:
+      - "<open> [<name>] [<area>] [<shades>] [<area>]"
+      slots:
+        device_class:
+          - "awning"
+          - "shade"
